@@ -1,0 +1,212 @@
+<div class="main-content">
+    <div class="container-fluid">
+        
+          
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card card-chart">
+                    <div class="card-header card-header-success">
+                        <div class="ct-chart" id="dailySalesChart"></div>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">Daily Driving </h4>
+                        <p class="card-category">
+                            <span class="text-success"><i class="fa fa-long-arrow-up"></i> 55% </span> increase in today Driving.</p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="stats">
+                            <i class="material-icons">access_time</i> updated 4 minutes ago
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+        <div class="row">
+            
+            <div class="col-lg-12 col-md-12">
+                <div class="card">
+                    <div class="card-header card-header-warning">
+                        <h4 class="card-title">Liste of subscribers</h4>
+                        
+                        <form class="navbar-form">
+                          <div class="input-group no-border">
+                              <input type="text" value="" class="form-control" placeholder="Search...">
+                              <button mat-raised-button type="submit" class="btn btn-white btn-round btn-just-icon">
+                                  <i class="material-icons">search</i>
+                                  <div class="ripple-container"></div>
+                              </button>
+                          </div>
+                      </form>
+                    </div>
+                    <div class="card-body">
+                      <div class="table-responsive">
+                          <table class="table">
+                              <thead class=" text-primary">
+                                  <th>
+                                      ID
+                                  </th>
+                                  <th>
+                                      Name
+                                  </th>
+                                  <th>
+                                      CIN
+                                  </th>
+                                  <th>
+                                    Score Fuel Consommation
+                                  </th>
+                                  <th>
+                                    Score idling
+                                  </th>
+                                  <th>
+                                    Score highrpm
+                                </th>
+                                <th>
+                                    EcoScore Total
+                                </th>
+                                <th>
+                                    Classification
+                                </th>
+
+                              </thead>
+                              <tbody>
+                                  <tr *ngFor="let response of scores">
+                                      <td>
+                                          {{response.user.id}}
+                                      </td>
+                                      <td>
+                                       {{response.user.firstName}} {{response.user.lastName}} 
+                                      </td>
+                                      <td>
+                                        {{response.user.cin}} 
+                                      </td>
+                                      <td>
+                                        {{response.scoreEcodriving.scorefuelConsumption}}
+                                          
+                                      </td>
+                                      <td class="text-primary">
+                                        {{response.scoreEcodriving.scoreidLing}}
+                                      </td>
+                                      <td>
+                                        {{response.scoreEcodriving.scorehighRpm}}
+                                    </td>
+                                    <td>
+                                        {{response.scoreEcodriving.ecoScore}}
+                                    </td>
+                                    <td>
+                                        {{response.scoreEcodriving.classificaton}}
+                                    </td>
+  
+                                  </tr>
+                                  <tr>
+                                      <td>
+                                          
+                                      </td>
+                                      <td>
+                                          
+                                      </td>
+                                      <td>
+                                         
+                                      </td>
+                                      <td>
+                                          
+                                      </td>
+                                      <td class="text-primary">
+                                         
+                                      </td>
+                                      <td>
+                                        
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                      <td>
+                                          
+                                      </td>
+                                      <td>
+                                    
+                                      </td>
+                                      <td>
+                                      
+                                      </td>
+                                      <td>
+                                        
+                                      </td>
+                                      <td class="text-primary">
+                                         
+                                      </td>
+                                      <td>
+                                       
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                      <td>
+                                          
+                                      </td>
+                                      <td>
+                                          
+                                      </td>
+                                      <td>
+                                          
+                                      </td>
+                                      <td>
+                                          
+                                      </td>
+                                      <td class="text-primary">
+                                        
+                                      </td>
+                                      <td>
+                                       
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                      <td>
+                                         
+                                      </td>
+                                      <td>
+                                         
+                                      </td>
+                                      <td>
+                                          
+                                      </td>
+                                      <td>
+                                       
+                                      </td>
+                                      <td class="text-primary">
+                                          
+                                      </td>
+                                      <td>
+                                       
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                      <td>
+                                          
+                                      </td>
+                                      <td>
+                                          
+                                      </td>
+                                      <td>
+                                         
+                                      </td>
+                                      <td>
+                                          
+                                      </td>
+                                      <td class="text-primary">
+                                         
+                                      </td>
+                                      <td>
+                                        
+                                    </td>
+                                  </tr>
+                              </tbody>
+                          </table>
+                      </div>
+                  </div>
+              
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  
